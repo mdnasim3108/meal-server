@@ -16,10 +16,6 @@ mongoose.connect(
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-    },
-    (err) => {
-        if (err) throw err;
-        console.log("MongoDB connection established");
     }
 );
 app.post("/addmeals", async (req, res) => {
